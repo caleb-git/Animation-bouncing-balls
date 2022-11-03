@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width:100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(35, 33, 35);
+}
+
+.cuadro{
+    border: 5px solid blue;
+    padding: 200px 90px;
+    position: relative;
+}
+
+ul{
+    list-style: none;
+    width:600px;
+    height: 25px;
+    background-color: white;
+    
+}
+
+ul li:nth-child(1){
+    width:45px;
+    height: 45px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top:155px;
+    left: 195px;
+    animation: brincos 1s linear infinite;
+}
+
+ul li:nth-child(2){
+    width:45px;
+    height: 45px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top:155px;
+    left: 285px;
+    animation: brincos 1s linear 1.2s infinite;
+}
+
+ul li:nth-child(3){
+    width:45px;
+    height: 45px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top:155px;
+    left: 365px;
+    animation: brincos 1s linear 1.4s infinite;
+}
+
+ul li:nth-child(4){
+    width:45px;
+    height: 45px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top:155px;
+    left: 465px;
+    animation: brincos 1s linear 3.6s infinite;
+}
+
+ul li:nth-child(5){
+    width:45px;
+    height: 45px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top:155px;
+    left: 585px;
+    animation: brincos 1s linear 2.2s infinite;
+}
+
+/*REGLA*/
+
+@keyframes brincos{
+    0%{top:155px;}
+    50%{top:0px;}
+    100%{top:155px;}
+}
